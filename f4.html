@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Function 4 and 5</title>
+</head>
+<body>
+
+    <h1>Function 4: Counter</h1>
+    <p id="result1"></p> 
+
+    <script>
+        
+        let counter = 0;
+
+     
+        function add() {
+            counter += 1;
+            return counter;
+        }
+
+        // Call add() 3 times
+        add();
+        add();
+        add();
+
+      
+        document.getElementById("result1").textContent = "Counter is: " + counter;
+    </script>
+
+ 
+    <h1>Function 5: The Square</h1>
+    <p id="result2"></p> 
+
+    <script>
+        let a = 6;
+
+        
+        function myFunction() {
+            return a * a;
+        }
+
+     
+        let result = myFunction();
+
+        
+        document.getElementById("result2").textContent = "Square of " + a + " is: " + result;
+    </script>
+
+</body>
+</html>
