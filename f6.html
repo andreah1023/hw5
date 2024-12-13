@@ -2,26 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Function 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Function</title>
 </head>
 <body>
 
-    <h1>Function 6 </h1>
+    <h1>Function 6</h1>
     <p id="result"></p>
 
     <script>
-        x = sumAll(1, 333, 700, 23, 32, 65);
-
-function sumAll() {
-  let sum = 0;
-  for (let i = 0; i < arguments.length; i++) {
-    sum += arguments[i];
-  }
-  return sum;
-}
-document.getElementById("result").textContent = "The sum is: " + x;
-
+        function sumAll() {
+            let sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        const x = sumAll(1, 333, 700, 23, 32, 65);
+        document.getElementById("result").textContent = "The sum is: " + x;
     </script>
 
 </body>
