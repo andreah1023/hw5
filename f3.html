@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Function 2</title>
+</head>
+<body>
+
+    <h1>Function 3: The Sum</h1>
+    <p id="result"></p>
+
+    <script>
+        function sum(...args) {
+  let sum = 0;
+  for (let arg of args) sum += arg;
+  return sum;
+}
+
+let x = sum(60, 600, 16, 477, 29, 232, 32, 77);
+document.getElementById("result").textContent = "The total sum is: " + x;
+    </script>
+
+</body>
+</html>
