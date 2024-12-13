@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Function 4</title>
+</head>
+<body>
+
+    <h1>Function 5 </h1>
+    <p id="result"></p>
+
+    <script>
+        x = sumAll(1, 333, 700, 23, 32, 65);
+
+function sumAll() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+document.getElementById("result").textContent = "The sum is: " + x;
+
+    </script>
+
+</body>
+</html>
