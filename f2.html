@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Function 3</title>
+</head>
+<body>
+
+    <h1>Function 3: Find the Maximum Value</h1>
+    <p id="result"></p>
+
+    <script>
+        
+        function findMax() {
+            let max = -Infinity; 
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        let x = findMax(555555, 44, 500, 4000000, 44, 88);
+        document.getElementById("result").textContent = "The maximum value is: " + x;
+    </script>
+
+</body>
+</html>
